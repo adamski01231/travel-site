@@ -3,7 +3,7 @@ var watch = require('gulp-watch');
 var browserSync = require('browser-sync').create();
 
 gulp.task('cssInject', ['styles'], function() {
-    console.log('cssInjest started ...');
+    console.log('cssInjest task started ...');
     return gulp.src('app/temp/styles/styles.css')
         .pipe(browserSync.stream());
 });
